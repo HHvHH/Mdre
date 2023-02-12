@@ -25,10 +25,10 @@ from telethon.tl.functions.users import GetFullUserRequest
 from youtubesearchpython import VideosSearch
 
  
-fotoplay = "https://telegra.ph/file/9381a140aafbb75177300.jpg"
-ngantri = "https://telegra.ph/file/9381a140aafbb75177300.jpg"
+fotoplay = "https://telegra.ph/file/16c8c27938bc7ac235436.jpg"
+ngantri = "https://telegra.ph/file/16c8c27938bc7ac235436.jpg"
 from R0R77 import call_py, R0R77, client as Client
-owner = "668571162"
+owner = "1397042354"
 from R0R77.helpers.yt_dlp import bash
 from R0R77.helpers.chattitle import CHAT_TITLE
 from R0R77.helpers.queues import (
@@ -125,7 +125,7 @@ async def _(event):
      await event.delete()
 
 btnn =[
-    [Button.url("Hasoni Alnajar", url=f"t.me/hsshh"), Button.url("Ch", url=f"t.me/hasoni_lq")],
+    [Button.url("Haider", url=f"t.me/hvvhh"), Button.url("Ch", url=f"t.me/deoou")],
     [Button.inline("اغلاق", data="cls")]]
 
 
@@ -147,7 +147,7 @@ async def play(event):
         or not replied
         and not title
     ):
-        return await event.client.send_file(chat_id, Config.CMD_IMG, caption="**يجب عليك كتابة عنوان الشيء الذي تريد تشغيله**\n\n **مثال**: `!تشغيل سورة الكهف`", buttons=btnn)
+        return await event.client.send_file(chat_id, Config.CMD_IMG, caption="**يجب عليك كتابة عنوان الشيء الذي تريد تشغيله**\n\n **مثال**: `!تشغيل عنود الاسمر جيبه`", buttons=btnn)
     elif replied and not replied.audio and not replied.voice or not replied:
         botman = await event.reply("يتم التعرف على الجفصه . . .")
         query = event.text.split(maxsplit=1)[1]
@@ -245,7 +245,7 @@ async def vc_end(event, perm):
 
 
 
-@R0R77.on(events.NewMessage(pattern="^[?!/]فيديتو"))
+@R0R77.on(events.NewMessage(pattern="فيديو"))
 async def vplay(event):
     if Config.HEROKU_MODE == "ENABLE":
         await event.reply("- لا يمكنك استخدام هذا الامر لانك تستخدم هيروكو في التنصيب")
@@ -267,7 +267,7 @@ async def vplay(event):
         or not replied
         and not title
     ):
-        return await event.client.send_file(chat_id, Config.CMD_IMG, caption="**يجب عليك كتابة عنوان لتشغيله**\n\n **مثال**: `!فيديو قران`", buttons=btnn)
+        return await event.client.send_file(chat_id, Config.CMD_IMG, caption="**يجب عليك كتابة عنوان لتشغيله**\n\n **مثال**: `!فيديو عنود الاسمر`", buttons=btnn)
     if replied and not replied.video and not replied.document:
         razan = await event.reply("انتظر قليلا يتم التعرف")
         query = event.text.split(maxsplit=1)[1]
